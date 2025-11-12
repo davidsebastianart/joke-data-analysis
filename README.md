@@ -4,7 +4,7 @@ This project performs a comprehensive analysis of a joke dataset sourced from a 
 
 ## 1. Data Acquisition
 
-The first step was to gather data from the `official-joke-api.appspot.com`.
+The first step was to gather data from the `https://github.com/15Dkatz/official_joke_api`.
 
 * **Method:** Data was fetched using the Python `requests` library by calling the `/jokes/random/250` endpoint.
 * **Process:** The API has a limit of 250 jokes per request. To obtain a more substantial dataset for analysis, the acquisition process was performed twice.
