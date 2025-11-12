@@ -29,7 +29,7 @@ With the clean data, we proceeded to uncover insights.
 * **Finding:** The dataset is heavily dominated by **'general'** jokes (312 out of 371). **'programming'** jokes (53) were a distant second, while 'knock-knock' (4) and 'dad' (2) jokes were rare.
 * **Visualization:** A `seaborn` bar chart was created to visualize this distribution, clearly highlighting the skew across categories.
 
-![Joke Type Distribution](joke_type_distribution.png) ### b. Text Length Analysis
+### b. Text Length Analysis
 
 * **Analysis:** Two new feature columns (`setup_length` and `punchline_length`) were engineered to store the character length of each joke part.
 * **Finding:**
@@ -37,14 +37,14 @@ With the clean data, we proceeded to uncover insights.
     * **Punchline:** Punchlines are significantly shorter and more concise, with most falling in the 20-30 character range.
 * **Visualization:** This insight was supported by histograms and box plots, showing the classic "moderate setup, brief punchline" structure.
 
-![Joke Length Distribution](joke_length_distribution.png) ### c. Advanced Text Analysis: Word Frequency
+### c. Advanced Text Analysis: Word Frequency
 
 * **Method:** To identify common themes, a word frequency analysis was performed. Text from the `setup` and `punchline` columns was preprocessed (lowercased, punctuation removed, and common English stopwords removed).
 * **Setup Findings:** The most common setup words include **'call'**, **'does'**, **'hear'**, and **'whats'**. This indicates many jokes are formatted as questions or "what do you call..." scenarios.
 * **Punchline Findings:** The word **'because'** was by far the most dominant punchline word. This suggests that punchlines often serve as the explanatory or unexpected answer to the setup's question.
 * **Visualization:** Two bar charts were generated to compare the top 20 words for both setups and punchlines.
 
-![Top Setup Words](setup_words.png) ![Top Punchline Words](punchline_words.png) ## 4. Summary & Conclusion
+## 4. Summary & Conclusion
 
 This analysis successfully uncovered several key characteristics of the joke dataset:
 
