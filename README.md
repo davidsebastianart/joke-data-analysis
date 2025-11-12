@@ -7,7 +7,7 @@ This project performs a comprehensive analysis of a joke dataset sourced from a 
 The first step was to gather data from the `official-joke-api.appspot.com`.
 
 * **Method:** Data was fetched using the Python `requests` library by calling the `/jokes/random/250` endpoint.
-* **Process:** To obtain a more substantial dataset, this acquisition process was performed twice.
+* **Process:** The API has a limit of 250 jokes per request. To obtain a more substantial dataset for analysis, the acquisition process was performed twice.
 * **Result:** Two data batches (each containing 250 jokes) were successfully retrieved and saved into two separate CSV files (`jokes_data_1.csv` and `jokes_data_2.csv`).
 
 ## 2. Data Preparation & Cleaning
